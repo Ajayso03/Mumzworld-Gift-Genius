@@ -1,4 +1,6 @@
-An end-to-end, AI-native concierge frontend prototype designed to help users discover the perfect baby shower gifts. 
+# Mumzworld AI - Baby Shower Gift Finder 🍼✨
+
+An end-to-end, AI-native concierge frontend prototype designed to help users discover the perfect baby shower gifts. Built as a response to the **Mumzworld AI-Native Internship (Track A)** take-home challenge.
 
 ## 🎯 Overview
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumzworld AI - Baby Shower Gift Finder</title>
+    <meta name="description"
+        content="AI-native concierge for discovering the perfect baby shower gifts, focusing on safety, age-compatibility, and context.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Context Panel -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-baby-carriage"></i>
+                <span>Gift<span class="highlight">Genius</span></span>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Track A Prototype</h3>
+                <p>AI-Native Engineering</p>
+                <div class="badge">RAG Simulation</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Quick Scenarios</h3>
+                <button class="quick-prompt-btn"
+                    data-query="I need a baby shower gift for my coworker. Budget is around $50. Something gender-neutral.">
+                    <i class="fa-solid fa-briefcase"></i> Coworker Gift (<$50) </button>
+                        <button class="quick-prompt-btn"
+                            data-query="What are some safe, educational toys for a 6-month-old?">
+                            <i class="fa-solid fa-shapes"></i> Safe Toys (6mo+)
+                        </button>
+                        <button class="quick-prompt-btn"
+                            data-query="Looking for a premium gift for my sister's first baby. Practical and highly rated.">
+                            <i class="fa-solid fa-gem"></i> Premium First Baby
+                        </button>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Built for Mumzworld Internship</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="assistant-info">
+                    <div class="avatar">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <div>
+                        <h2>Mumzworld AI Concierge</h2>
+                        <p>Specialized in safety & age-compatibility</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Initial Welcome Message -->
+                <div class="message assistant">
+                    <div class="message-content">
+                        <p>Hi there! 👋 I'm your AI Gift Concierge. I can help you find the perfect baby shower gift by
+                            analyzing product safety, age guidelines, and reviews.</p>
+                        <p>Who are you shopping for today?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Describe what you're looking for..." rows="1"></textarea>
+                    <button id="send-btn" aria-label="Send message">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <p>Powered by simulated RAG architecture over Mumzworld product catalog</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
